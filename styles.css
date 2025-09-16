@@ -20,19 +20,6 @@ body {
   color: #fff;
 }
 
-.logo-img {
-  width: 40px;
-  height: 40x;
-  object-fit: contain;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: scale(1.1);
-}
-
 .logo-text {
   font-family: 'Poppins', sans-serif;
 }
@@ -63,64 +50,6 @@ body {
   50% { background-position: 100% 50%; }
   75% { background-position: 50% 0%; }
   100% { background-position: 0% 50%; }
-}
-
-/* Navigation Bar */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(12px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-}
-.logo span {
-  margin-left: 0.5rem;
-}
-
-/* Bubble Hover Nav Links */
-nav a {
-  margin-left: 1rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-nav a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
-
-/* Login Button */
-.login-btn {
-  margin-left: 1rem;
-  padding: 0.5rem 1.2rem;
-  background: linear-gradient(to right, #8B5CF6, #EC4899);
-  border: none;
-  border-radius: 25px;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.login-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
 }
 
 /* Hero Section */
@@ -196,4 +125,124 @@ footer {
 }
 .footer-links a:hover {
   color: #fff;
+
 }
+
+
+
+
+
+
+
+
+/* --- LOGO --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.logo-img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #181f2a;
+  box-shadow:
+    0 0 0 6px rgba(59,130,246,0.18),
+    0 0 24px 0 rgba(59,130,246,0.10);
+  display: block;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.logo-img:hover {
+  box-shadow:
+    0 0 0 10px rgba(59,130,246,0.22),
+    0 0 32px 0 rgba(139,92,246,0.18);
+  transform: scale(1.04);
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: #fff;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.7rem 2.5rem;
+  background: linear-gradient(90deg, #232b47 0%, #4f46e5 100%);
+  box-shadow: 0 4px 24px 0 rgba(59,130,246,0.10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  border-bottom: 1.5px solid rgba(59,130,246,0.10);
+  backdrop-filter: blur(14px) saturate(140%);
+}
+
+/* --- NAVIGATION LINKS --- */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav a,
+.login-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.08rem;
+  padding: 0.55rem 1.6rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  transition: 
+    background 0.22s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.22s cubic-bezier(.4,2,.6,1),
+    transform 0.22s cubic-bezier(.4,2,.6,1);
+  box-shadow: 0 2px 8px rgba(59,130,246,0.06);
+  border: none;
+  outline: none;
+  margin-left: 0.7rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a:hover,
+.login-btn:hover {
+  background: linear-gradient(90deg, #6366f1 60%, #8b5cf6 100%);
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(59,130,246,0.13);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* --- LOGIN BUTTON --- */
+.login-btn {
+  background: linear-gradient(90deg, #8B5CF6 60%, #EC4899 100%);
+  font-weight: 700;
+  border: none;
+  margin-left: 1.2rem;
+  box-shadow: 0 2px 12px rgba(139, 92, 246, 0.13);
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #3B82F6 60%, #8B5CF6 100%);
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(59,130,246,0.18);
+  transform: translateY(-2px) scale(1.06);
+}
+
+
+
+
+
+
