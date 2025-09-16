@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploration - Smart Cities</title>
+  
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  
+  <div class="animated-bg"></div>
+
+
+  
+  <header class="main-navbar">
+    <div class="brand">
+      <span class="brand-title">Smart Cities</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="exploration.html" class="nav-link nav-active">Exploration</a>
+      <a href="security.html" class="nav-link">Security</a>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="maintenance.html" class="nav-link">Maintenance</a>
+    </nav>
+ 
+    <a href="login.html" class="btn-auth">Login / Sign Up</a>
+  </header>
+
+ 
+  <section class="hero-section fade-in">
+    <h1>Exploration</h1>
+    <p>Discover how smart technologies are transforming urban exploration and connectivity.</p>
+  </section>
+
+ 
+  <button class="btn-feedback" id="openFeedback">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Feedback
+  </button>
+
+  <!-- Feedback Modal -->
+  <div id="feedbackModal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="closeFeedback">&times;</button>
+      <h2>Send Feedback</h2>
+      <form id="feedbackForm">
+        <textarea name="feedback" rows="5" placeholder="Your feedback..." required></textarea>
+        <button type="submit" class="btn-cta">Submit</button>
+      </form>
+    </div>
+  </div>
+ 
+  <footer>
+    <p>© 2025 Smart Cities. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
